@@ -1,0 +1,421 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Ubuntu', 'Times New Roman', Times, serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar start */
+
+nav {
+    background-color: #2A2A38;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    height: 70px;
+    box-shadow: 0px .5px 15px #bdbfcd52;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+    color: #FDB720;
+}
+
+.logo {
+    width: 50px;
+    border: 3px solid #FDB720;
+    border-radius: 50%;
+    margin: 10px 20px;
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+    margin: 10px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.tabs li a {
+    text-decoration: none;
+    color: #BDBFCD;
+    padding: 5px;
+    margin: 10px;
+}
+
+.tabs li a:hover {
+    color: white;
+
+}
+
+/* Navbar End */
+
+/* Home Section Start */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2A2A38;
+    color: #BDBFCD;
+    padding-top: 70px;
+}
+
+.mypic {
+    width: 40vw;
+    margin-top: 10px;
+}
+
+.bio h2 {
+    color: #FDB720;
+    margin: 10px 10px 10px 0px;
+}
+
+.bio {
+    width: 50vh;
+    font-size: 20px;
+    margin: 30px;
+    align-self: center;
+}
+
+.bio button {
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    width: 100px;
+    color: #FDB720;
+    border-radius: 3px;
+    background-color: #424450;
+    border: none;
+}
+
+.bio button:hover {
+    background-color: #fdb720;
+    color: #2A2A38;
+    transform: scale(105%);
+    transition: all .5s;
+}
+
+.purposal {
+    font-size: 20px;
+    width: 50vh;
+    align-self: flex-start;
+    margin: 30px;
+}
+
+.purposal p {
+    margin: 10px 10px 10px 0px;
+}
+
+.icons {
+    color: #fdb720;
+    font-size: larger;
+    margin-right: 7px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #343643;
+}
+
+.icons:hover {
+    transform: scale(110%);
+    background-color: #fdb720;
+    color: #2A2A38;
+}
+
+.gray {
+    display: none;
+}
+
+.gray:hover {
+    display: inline;
+}
+
+/* Home Section End */
+
+/* About Section Start */
+#about {
+    background-color: #2A2A38;
+    padding: 20px;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about ol {
+    font-size: 20px;
+    margin: 7vw;
+    color: #BDBFCD;
+}
+
+#about h3 {
+    color: #FDB720;
+}
+
+#about p {
+    margin: 10px;
+    margin-bottom: 25px;
+}
+
+.cv-btn {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #424450;
+    border: none;
+    border-radius: 5px;
+    color: #FDB720;
+    margin-bottom: 30px;
+    margin-top: -40px;
+
+}
+
+.cv-btn:hover {
+    background-color: #fdb720;
+    color: #2A2A38;
+    transform: scale(110%);
+    transition: all .5s;
+}
+
+/* About Section End */
+
+/* Contact Section Start */
+.container h2 {
+    text-align: center;
+    color: #2A2A38;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #FDB720;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+form {
+    padding: 15px;
+    display: block;
+    color: #BDBFCD;
+}
+
+#contact {
+    background-color: #2A2A38;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 70px;
+}
+
+.container {
+    width: 73vw;
+    align-self: center;
+    background-color: #343643;
+    border: 2px solid #BDBFCD;
+    border-radius: 10px;
+    
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+
+.form-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item textarea {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    font-size: 120%;
+    color: white;
+    background-color: transparent;
+    border-bottom: 1px solid #BDBFCD;
+    outline: none;
+}
+
+::placeholder{
+    color: gray;
+    font-size: 15px;
+}
+
+.form-item textarea {
+    height: auto;
+}
+
+.form-button {
+    text-align: center;
+}
+
+.form-button button {
+    background-color: #2A2A38;
+    color: #fdb720;
+    font-weight: 700;
+    font-size: larger;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-button button:hover {
+    transform: scale(105%);
+    background-color: #fdb720;
+    color: #2A2A38;
+    transition: all .5s;
+}
+
+.details {
+    background-color: #424450;
+    width: 70vw;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10PX;
+    border: #BDBFCD 2px solid;
+}
+
+.details div {
+    margin: 10px;
+    color: #BDBFCD;
+}
+
+.details div b {
+    margin-right: 10px;
+    color: #FDB720;
+}
+
+.details div a {
+    color: #BDBFCD;
+    line-height: 20px;
+}
+
+.mapouter {
+    text-align: center;
+}
+
+/* Contact Section End */
+
+/* Footer Section */
+.footer {
+    background: #424450;
+    padding: 30px;
+    text-align: center;
+}
+
+.s-icons {
+    margin-bottom: 30px;
+}
+
+.c-right {
+    color: #BDBFCD;
+}
+
+.arrow-c {
+    text-align: center;
+    float: right;
+    display: block;
+    justify-content: center;
+    position: fixed;
+}
+
+.page-up {
+    font-size: 40px;
+    position: fixed;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    color: #2A2A38;
+    place-items: center;
+    justify-content: center;  
+    background-color: #fdb720;
+    border-radius: 50%;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid #BDBFCD;
+}
+
+/* Responsiveness */
+@media screen and (max-width:750px) {
+    nav a b {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 35px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .name b {
+        font-size: 19px;
+    }
+
+    .tabs {
+        font-size: 15px;
+    }
+
+    .tabs li a {
+        margin: 0;
+    }
+
+    .bio,
+    .purposal {
+        width: 80%;
+    }
+
+    #home {
+        flex-direction: column-reverse;
+
+    }
+
+    .mypic {
+        width: 80vw;
+        order: 3;
+    }
+
+    .purposal {
+        order: 1;
+        align-self: center;
+    }
+
+    .bio {
+        order: 2;
+    }
+
+    .mapouter {
+        text-align: center;
+    }
+
+    .mail {
+        display: block;
+    }
+
+    .page-up{
+        transform: scale(70%);
+        bottom: 10px;
+        right: 10px;
+    }
+}
